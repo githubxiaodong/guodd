@@ -5,7 +5,6 @@
   */  
 //define your token  
 define("TOKEN", "weixinn2LVkS3smZgXtrMjkQvM");  
-echo TOKEN;die;
 $wechatObj = new wechatCallbackapiTest();  
 if(isset($_GET["echostr"])){ #验证过token，成为开发者之后，可以直接$wechatObj->responseMsg();  
     $wechatObj->valid();  
@@ -26,7 +25,7 @@ class wechatCallbackapiTest
     }  
   
   
-        public function responseMsg(){  
+    public function responseMsg(){  
         //get post data, May be due to the different environments  
         $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];  
   
@@ -61,7 +60,7 @@ class wechatCallbackapiTest
                 else  
                 {  
                     $msgType = "text";  
-                    $contentStr = "欢迎关注shenghuoju";  
+                    $contentStr = "欢迎关注shenghuoju1";  
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);  
                     echo $resultStr;  
                 }  
@@ -80,7 +79,7 @@ class wechatCallbackapiTest
                 $event = $postObj->Event;  
                 $msgType = "text";  
                 if( $event =='subscribe'){  
-                    $contentStr = "欢迎关注shenghuoju";  
+                    $contentStr = "欢迎关注shenghuoju2";  
   
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);  
                     echo $resultStr;  
@@ -89,7 +88,7 @@ class wechatCallbackapiTest
             }  
   
         }else {  
-            echo "欢迎关注shenghuoju";  
+            echo "欢迎关注shenghuoju3";  
             exit;  
         }  
     }  
