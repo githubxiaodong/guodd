@@ -23,6 +23,7 @@ class wechatCallbackapiTest
             exit;  
         }else{
             echo $echoStr;
+            exit;
         } 
     }  
   
