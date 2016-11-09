@@ -1,5 +1,5 @@
 <?php  
-echo 11111111122222222222;die;
+echo 'hello world';die;
 /** 
   * wechat php test 
   */  
