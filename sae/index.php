@@ -4,7 +4,7 @@
   * wechat php test 
   */  
 //define your token  
-define("TOKEN", "weixinn2LVkS3smZgXtrMjkQvM");  
+define("TOKEN", "ewrfedfdsfsdfdsfdsfsdfsdf");  
 $wechatObj = new wechatCallbackapiTest();  
 if(isset($_GET["echostr"])){ #验证过token，成为开发者之后，可以直接$wechatObj->responseMsg();  
     $wechatObj->valid();  
@@ -21,10 +21,7 @@ class wechatCallbackapiTest
         if($this->checkSignature()){  
             echo $echoStr;  
             exit;  
-        }else{
-            echo $echoStr;
-            exit;
-        } 
+        }
     }  
   
   
