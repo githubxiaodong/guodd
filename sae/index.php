@@ -1,4 +1,5 @@
 <?php  
+echo 11111111122222222222;die;
 /** 
   * wechat php test 
   */  
