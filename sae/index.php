@@ -1,5 +1,5 @@
 <?php  
-
+echo 'hello';die;
 /** 
   * wechat php test 
   */  
